@@ -1,0 +1,16 @@
+	<section id="categoryMain">
+		<article>
+			<header ng-bind-html="categoryMain.headLine | parseHTML"></header>
+			<section><span ng-bind-html="categoryMain.fullStory | parseHTML"></span></section>
+		</article>		
+	</section>
+	
+	<aside id="categoryAside">
+		<article>
+			<header ng-bind-html="categoryAside.headLine | parseHTML"></header>
+			<section>
+				<span id="location">{{categoryAside.location}}</span>
+				<span ng-bind-html="categoryAside.fullStory | parseHTML"></span>
+			</section>
+		</article>
+	</aside>

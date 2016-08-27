@@ -1,0 +1,60 @@
+<div id="banner" ng-class="bannerStyle">
+	<p id="bannerCallToAction" class="right" ng-click="toggleBanner()">{{bannerCallToAction}} <i ng-class="bannerCallToActionIcon"></i></p>
+	<div id="bannerContent">
+	<p>{{banners[0].message}}</p>
+	<p ng-show="bannerExpanded">{{banners[1].message}}</p>
+	</div>
+</div>
+
+<div id="home">
+	<aside>
+		<article ng-repeat="asideArticle in asideArticles">
+			<header ng-bind-html="asideArticle.headLine | parseHTML"></header>
+			<section>
+				<span id="location">{{asideArticle.location}}</span>
+				<span ng-bind-html="asideArticle.snippet | parseHTML"></span>
+			</section>
+			<hr ng-if="!$last" />
+		</article>		
+	</aside>
+	
+	
+	<section id="main">
+		<article ng-repeat="mainArticle in mainArticles">
+			<header ng-bind-html="mainArticle.headLine | parseHTML"></header>
+			<section>
+				<span id="location">{{mainArticle.location}}</span>
+				<span ng-bind-html="mainArticle.snippet | parseHTML"></span>
+			</section>
+		</article>
+	</section>
+	
+	<div id="asideRight">
+		<section id="opinion">
+			<header id="opinionTitle">The Opinion Pages</header>
+			<article ng-repeat="opinionArticle in opinionArticles">
+				<div ng-class-odd="'leftCol'" ng-class-even="'rightCol'">
+					<header ng-bind-html="opinionArticle.headLine | parseHTML"></header>
+					<section>
+						<span id="location">{{opinionArticle.location}}</span>
+						<span ng-bind-html="opinionArticle.fullStory | parseHTML"></span>
+					</section>
+				</div>
+			</article>
+		</section>
+		
+		<section id="travel">
+			<header><span id="travelTitle">Travel</span><span id="arrow" ng-repeat="arrow in arrows"><i class="fa fa-chevron-right"></i></span></header>
+			<article ng-repeat="travelArticle in travelArticles">
+				<div ng-class-odd="'leftCol'" ng-class-even="'rightCol'">
+					<header ng-bind-html="travelArticle.headLine | parseHTML"></header>
+					<section>
+						<span id="location">{{travelArticle.location}}</span>
+						<span ng-bind-html="travelArticle.snippet | parseHTML"></span>
+					</section>
+				</div>
+			</article>
+		</section>
+	</div>
+</div>
+

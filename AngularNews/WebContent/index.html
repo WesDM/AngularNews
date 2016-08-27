@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="html5NewsApp">
+
+<head>
+	<link href='/HTML5News/css/html5NewsApp.css' rel='stylesheet' type='text/css'/>
+	<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+	<link href='//fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-controller="html5NewsCtrl" class="center">
+	<header>
+		<div id="topNav">
+			<a href="#" class="paddingRight15"><i class="fa fa-bars"></i> {{topNav.sections}}</a>
+			<a href="#"><i class="fa fa-search"></i> {{topNav.search}}</a>
+			<a href="#" class="right">{{topNav.user}} <i class="fa fa-cogs"></i></a>
+		</div>
+	
+		<hr>
+		
+		<div id="siteHeading">
+			<a href="/HTML5News/index.html" id="title" ng-click="selectItem('')">{{siteHeading.title}}</a>
+			<p id="date">{{siteHeading.dateMilli | date: "EEEE, MMMM d, y"}}</p>
+		</div>
+		
+		<hr>
+	
+		<nav>
+			<ul>
+				<li ng-repeat="category in categories | limitTo:6">
+					<a ng-class="{'active': category.id == states.activeItem}" ng-click="selectItem(category.id)"
+						href="/HTML5News/category/{{category.id}}">{{category.displayName}}</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="view">
+		<div ng-view></div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js"></script>
+	<script src="/HTML5News/js/html5NewsApp.js"></script>
+	<script src="/HTML5News/js/html5NewsCtrl.js"></script>
+	<script src="/HTML5News/js/html5NewsFilters.js"></script>
+</body>
+</html>

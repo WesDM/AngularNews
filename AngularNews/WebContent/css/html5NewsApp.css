@@ -1,0 +1,385 @@
+body{
+	width: 960px;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+video{
+	width:100%;
+	height: 60%;
+}
+
+#home aside{
+	padding-right: 10px;
+	width: 195px;
+ 	float:left;
+}
+
+#home aside img{
+	display: none;
+}
+
+#home aside article:first-of-type #location{
+	display: none;
+}
+
+#home aside article header{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 16pt;
+  	font-weight: 900;
+  	line-height: 18pt;
+} 
+
+#home aside article section{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 10pt;
+  	font-weight: 400;
+  	line-height: 13pt;
+}
+
+article header{
+	padding-bottom: 6px;
+}
+
+header a i{
+	color: #000000 !important;
+	font-size: 14pt !important;
+	vertical-align: middle !important;
+}
+
+nav{
+	text-align:center;
+}
+
+nav a{
+	color: #333333;	
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 12pt;
+}
+
+nav a:HOVER{
+	font-weight: bolder !important;
+}
+
+nav a:ACTIVE{
+	font-weight: bolder !important;
+}
+
+nav ul li{
+  	display: inline;
+  	padding-right: 30px;
+}
+
+nav ul li a.active {
+    color: #96BF19;
+}
+
+#topNav{
+	margin: 10px;
+}
+
+#topNav a{
+	color: #cccccc;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 9pt;
+}
+
+#siteHeading{
+	text-align: center;
+}
+
+#title{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 36pt;
+  	font-weight: 900;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#date{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 14pt;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+#banner{
+	height: 90px;
+	width: 960px;
+	display: inline-block;
+	background-color: #cccccc;
+	-webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+  	vertical-align: middle;
+}
+
+.bannerExpanded{
+	height: 180px !important;
+}
+
+#banner i{
+	font-size: 14pt;
+}
+
+#bannerCallToAction{
+	color: #FFFFFF;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 12pt;
+  	margin: 6px;
+  	cursor: pointer;
+}
+
+#bannerContent{
+	color: #333333;
+	clear: both;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-weight: 900;
+  	font-size: 16pt;
+  	text-align: center;
+}
+
+#categoryMain{
+	border-right: thin solid #333333;
+	float: left;
+	padding-right: 10px;
+	width: 600px;
+}
+
+#categoryMain header{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 26pt;
+  	font-weight: 900;
+  	line-height: 28pt;
+}
+
+#categoryMain section{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 10pt;
+  	font-weight: 400;
+  	line-height: 15pt;
+}
+
+#categoryAside{
+	float:left;
+	padding-left: 10px;
+	width:335px;
+}
+
+#categoryAside article header{
+	color: #666666;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 16pt;
+  	font-weight: 400;
+  	line-height: 18pt;
+}
+
+#categoryAside article section{
+	color: #666666;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 12pt;
+  	font-weight: 900;
+  	line-height: 15pt;
+}
+
+#main{
+	padding-right: 10px;
+	width:405px;
+	float:left;
+}
+
+#main article:first-of-type header:first-of-type{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 14pt;
+  	font-weight: 400;
+  	line-height: 16pt;
+}
+
+#main article header{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 14pt;
+  	font-weight: 700;
+  	line-height: 16pt;
+}
+
+#main article section{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 8pt;
+  	line-height: 14pt;
+  	padding-bottom: 20px;
+}
+
+#main img{
+	float: right;
+	width: 20%;
+	height: 20%;
+}
+
+#main video{
+	width: 100%;
+	height: 50%;
+}
+
+#asideRight{
+	float:left;
+	width: 340px;
+}
+	
+#opinionTitle{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 14pt;
+  	padding-bottom: 6px;
+  	text-align: center;
+}
+
+#opinion article:first-of-type header:first-of-type{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 12pt;
+  	line-height: 15pt;
+}
+
+#opinion article header{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 12pt;
+  	font-weight: 900;
+  	line-height: 15pt;
+}
+
+#opinion article section{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 9pt;
+  	line-height: 12pt;
+  	padding-bottom: 20px;
+}
+
+#travel{
+	clear:both;
+}
+
+#travel header{
+	padding-bottom: 6px;
+}
+
+#travelTitle{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 12pt;
+  	font-weight: 900;
+  	padding-right: 3px;
+}
+
+#travel article:first-of-type header:first-of-type{
+	color: #333333;
+	font-family: 'Arvo';
+	font-weight: 900;
+  	font-size: 12pt;
+  	line-height: 15pt;
+}
+
+#travel article header{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  italic;
+  	font-size: 12pt;
+  	font-weight: 900;
+  	line-height: 15pt;
+}
+
+#travel article section{
+	color: #333333;
+	font-family: 'Arvo';
+  	font-style:  normal;
+  	font-size: 10pt;
+  	line-height: 15	pt;
+}
+
+#travel img{
+	width: 100%;
+	height: 40px;
+}
+
+#travel img:last-of-type{
+	padding-bottom: 0px	!important;
+}
+
+#travel article:last-of-type img{
+	width: 100%;
+	height: 30px;
+}
+
+#arrow{
+	color: #cccccc !important;
+	font-size: 8px;
+}
+
+.leftCol{
+	float: left;
+	width: 165px;
+	padding-right: 5px;
+}
+
+.rightCol{
+	float:left;
+	width:170px;
+}
+
+#location{
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-right: 3px;
+}
+
+#home{
+	padding-top: 10px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right{
+	float: right;
+}
+
+.paddingRight15{
+	padding-right: 15px;
+}
